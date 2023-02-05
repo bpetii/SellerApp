@@ -4,11 +4,11 @@ import AppText from './AppText';
 
 import colors from '../config/color'
 
-function ListItem({title, subTitle, image, ImageComponent}) {
+function ListItem({title, subTitle, image, IconComponent}) {
     return (
         <View style={styles.container}>
             {image && <Image style={styles.image} source={image}/>}
-            {ImageComponent}
+            {IconComponent}
             <View style={styles.detailsContainer}>
                 <AppText style={styles.title}>{title}</AppText>
                 {subTitle && <AppText style={styles.subTitle}>{subTitle}</AppText>}
@@ -20,7 +20,8 @@ function ListItem({title, subTitle, image, ImageComponent}) {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        padding: 15
+        padding: 15,
+        backgroundColor: colors.white
     },
     image: {
         width: 70,
