@@ -70,7 +70,6 @@ const styles=StyleSheet.create({
     },
     screen: {
         backgroundColor: colors.light,
-        flex: 1
     }
 })
 
