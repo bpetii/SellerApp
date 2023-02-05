@@ -1,27 +1,14 @@
 import React from 'react';
-import { Text, StyleSheet, Platform } from 'react-native';
+import { Text } from 'react-native';
+
+import defaultStyles from '../config/styles';
 
 function AppText({children, style}) {
     return (
-        <Text style={[styles.text, style]}>
+        <Text style={[defaultStyles.text, style]}>
             {children}
         </Text>
     );
-}
-
-const styles = StyleSheet.create({
-    text: {
-        ...Platform.select({
-            ios: {
-                fontSize: 18,
-                fontFamily: 'Avenir'
-            },
-            android: {
-                fontSize: 20,
-                fontFamily: 'Roboto'
-            }
-        })
-    }
-})
+};
 
 export default AppText;
