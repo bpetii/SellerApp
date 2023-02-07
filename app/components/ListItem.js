@@ -14,9 +14,10 @@ function ListItem({title, subTitle, image, IconComponent, onPress, renderRightAc
                     {image && <Image style={styles.image} source={image}/>}
                     {IconComponent}
                     <View style={styles.detailsContainer}>
-                        <AppText style={styles.title}>{title}</AppText>
-                        {subTitle && <AppText style={styles.subTitle}>{subTitle}</AppText>}
+                        <AppText style={styles.title} numberOfLines={1} >{title}</AppText>
+                        {subTitle && <AppText style={styles.subTitle} numberOfLines={2}>{subTitle}</AppText>}
                     </View>
+                    <MaterialCommunityIcons color={colors.medium} name="chevron-right" size={25}/>
                 </View>
             </TouchableHighlight>
         </Swipeable>
@@ -25,6 +26,7 @@ function ListItem({title, subTitle, image, IconComponent, onPress, renderRightAc
 
 const styles = StyleSheet.create({
     container: {
+        alignItems: 'center',
         flexDirection: 'row',
         padding: 15,
     },
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
         borderRadius: '100%',
     },
     detailsContainer: {
+        flex: 1,
         marginLeft: 10,
         justifyContent: 'center'
     },
