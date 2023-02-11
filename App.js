@@ -1,12 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import ViewImageScreen from './app/screens/ViewImageScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import React, {useState} from 'react';
+import ImageInput from "./app/components/ImageInput";
+import ImageInputList from './app/components/ImageInputList';
+import Screen from './app/components/Screen';
+import AuthNavigator from './app/navigation/AuthNavigator';
+import ListingEditScreen from './app/screens/ListingEditScreen';
+import LoginScreen from './app/screens/LoginScreen';
 import WelcomeScreen from './app/screens/WelcomeScreen';
-import AppButton from './app/components/AppButton';
 
 export default function App() {
+
   return (
-    <WelcomeScreen />
+    <NavigationContainer>
+      <AuthNavigator />
+    </NavigationContainer>
+
+
   );
 }
 
