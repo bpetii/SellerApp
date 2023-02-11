@@ -6,9 +6,15 @@ import ListingDetailsScreen from '../screens/ListingDetailsScreen';
 const Stack = createStackNavigator();
 
 const FeedNavigator = () => (
-    <Stack.Navigator screenOptions={{gestureEnabled:true, gestureDirection:'vertical', cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS}}>
-        <Stack.Screen name="Listings" component={ListingsScreen}/>
-        <Stack.Screen name="ListingDetails" component={ListingDetailsScreen} options={{headerShown: false}}/>
+    <Stack.Navigator 
+        screenOptions={{ 
+            headerShown: false,
+            gestureEnabled:true, 
+            gestureDirection:'vertical', 
+            cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS
+        }}>
+        <Stack.Screen name="Listings" component={ListingsScreen} />
+        <Stack.Screen name="ListingDetails" component={ListingDetailsScreen}/>
     </Stack.Navigator>
 );
 
