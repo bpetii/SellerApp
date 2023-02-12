@@ -21,6 +21,9 @@
         "no-use-before-define": "off",
         "consistent-return": "off",
         "react/prop-types": "off",
-        "no-alert": "off"
+        "no-alert": "off",
+        "no-shadow":"off",
+        "global-require":"off",
+        "react/jsx-props-no-spreading": "off"
     }
 }
