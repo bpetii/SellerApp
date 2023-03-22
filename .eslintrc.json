@@ -25,6 +25,8 @@
         "no-shadow":"off",
         "global-require":"off",
         "react/jsx-props-no-spreading": "off",
-        "no-console": "off"
+        "no-console": "off",
+        "prefer-destructuring": "off",
+        "import/no-extraneous-dependencies": "off"
     }
 }
