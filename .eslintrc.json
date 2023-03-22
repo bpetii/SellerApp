@@ -24,6 +24,7 @@
         "no-alert": "off",
         "no-shadow":"off",
         "global-require":"off",
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "no-console": "off"
     }
 }
